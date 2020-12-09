@@ -3,16 +3,15 @@
 La doc de l'API qu'on va utiliser : https://ow-api.com/docs/#introduction
 
 
-* Créer un formulaire permettant de saisir date de naissance, nom, prénom et battletag.
+* Créer un formulaire permettant de saisir date de naissance, nom, prénom et battletag. [FAIT]
 
-* Grâce à JS, vérifiez dès qu'on change d'input que le champ est conforme à ce qui est attendu.
+* Grâce à JS, vérifiez dès qu'on change d'input que le champ est conforme à ce qui est attendu. [FAIT]
 
-* En particulier, ajoutez un validateur custom pour vérifier le format du battletag.
+* En particulier, ajoutez un validateur custom pour vérifier le format du battletag. [FAIT]
 
-* Directement dans l'input, remplacer # par -.
+* Directement dans l'input, remplacer # par -. [FAIT]
 
 * Si le battletag est au bon format, utilisez l'API indiquée plus haut (via AJAX) pour récupérer les infos du profil et affichez les infos suivantes directement le DOM grâce à JS :
-
 
     Parties jouées
     Classement

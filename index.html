@@ -9,20 +9,36 @@
 
 <body>
 
+        <div id="formulaire">
+        <form method="GET" onsubmit="return false">
 
         <label for="naissance">Date de naissance :</label>
-        <input id="naissance" type="date">
+        <input id="naissance" type="date" name="date" required>
 
         <label for="nom">Nom :</label>
-        <input id="nom" type="text">
+        <input id="nom" type="text" name="nom" oninput="checkThis(this)" required>
 
         <label for="prenom">Prénom :</label>
-        <input id="prenom" type="text">
+        <input id="prenom" type="text" name="prenom" oninput="checkThis(this)" required>
 
         <label for="battletag">Battletag :</label>
-        <input id="battletag" type="text" value="">
+        <input id="battletag" type="text" value="" name="battletag" oninput="checkTag(this)" required>
         
         <button onclick="OverwatchAPI()">Envoyer</button>
+        
+        </form>
+        </div>
+
+
+
+
+        <div id="profile">
+            <ul id="stats">
+
+            </ul>
+        <button onclick="goBack()">Rétour a l'accueil</button>
+        </div>
+
 
     <script src="assets/apps.js"></script>
 </body>
