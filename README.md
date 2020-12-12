@@ -1,5 +1,10 @@
 ## Tests effectués avec le battletag "cats#11481" 
 
+## Peut etre lancé en serveur local pour test en récupérant le repo: "https://gitlab.com/Yasmine091/profil-overwatch/-/tree/Florian"
+
+## Site: http://aloof-prof-overwatch.surge.sh/
+
+
 ## Contexte du projet
 
 La doc de l'API qu'on va utiliser : https://ow-api.com/docs/#introduction

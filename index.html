@@ -15,9 +15,6 @@
 
     <!-- create element récuperer données -->
 
-    <!--  -->
-
-    <!-- id pour recup form sur js ? -->
     <form method="get" action="app.js" onsubmit="return false">
         <!--  -->
         <label for="naissance" value="">Date de naissance :</label>
@@ -32,76 +29,75 @@
         <label for="battletag" value="">Battletag :</label>
         <input id="battletag" type="text" value="" oninput="checkTag(this)" required>
 
-        <p><button onclick="recup()">Envoyer</button></p>
+    </form>
 
-        <p>Resultats :</p>
+    <p><button onclick="recup()">Envoyer</button></p>
+
+    <p>Resultats :</p>
 
 
-        <div id="flip" class="tadam"><a>Cliquer pour afficher le profil</a></div>
+    <div id="flip" class="tadam"><a>Cliquer pour afficher le profil</a></div>
 
-        <div id="panel">
-            <h2>Profil Overwatch : </h2>
+    <div id="panel">
+        <h2>Profil Overwatch : </h2>
+        </br>
+        </br>
+
+        <div>
+            <p class="title">Nom : </p>
+            <p id="no"></p>
             </br>
-            </br>
-
-            <div>
-                <p class="title">Nom : </p>
-                <p id="no"></p>
-                </br>
-            </div>
-
-
-            <div>
-                <p class="title">Prénom : </p>
-                <p id="pr"></p>
-                </br>
-            </div>
-
-            <div>
-                <p class="title">Date de naissance : </p>
-                <p id="nais"></p>
-                </br>
-            </div>
-
-            <div>
-                <p class="title">Battletag : </p>
-                <p id="bt"></p>
-                </br>
-            </div>
-
-            <div>
-                <p class="title">Games Played : </p>
-                <p id="gamesP"></p>
-                </br>
-            </div>
-
-            <div>
-                <p class="title">Games Win : </p>
-                <p id="gamesW"></p>
-                </br>
-            </div>
-
-            <div>
-                <p class="title">Games Lost : </p>
-                <p id="gamesL"></p>
-                </br>
-            </div>
-
-            <div>
-                <p class="title">Rating : </p>
-                <p id="rating"></p>
-                </br>
-            </div>
-
-
         </div>
 
 
-        <script src="assets/apps.js"></script>
+        <div>
+            <p class="title">Prénom : </p>
+            <p id="pr"></p>
+            </br>
+        </div>
+
+        <div>
+            <p class="title">Date de naissance : </p>
+            <p id="nais"></p>
+            </br>
+        </div>
+
+        <div>
+            <p class="title">Battletag : </p>
+            <p id="bt"></p>
+            </br>
+        </div>
+
+        <div>
+            <p class="title">Games Played : </p>
+            <p id="gamesP"></p>
+            </br>
+        </div>
+
+        <div>
+            <p class="title">Games Win : </p>
+            <p id="gamesW"></p>
+            </br>
+        </div>
+
+        <div>
+            <p class="title">Games Lost : </p>
+            <p id="gamesL"></p>
+            </br>
+        </div>
+
+        <div>
+            <p class="title">Rating : </p>
+            <p id="rating"></p>
+            </br>
+        </div>
 
 
+    </div>
 
-    </form>
+
+    <script src="assets/apps.js"></script>
+
 
 </body>
 
