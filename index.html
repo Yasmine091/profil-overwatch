@@ -2,30 +2,107 @@
 <html lang="en">
 
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="assets/style.css" class="">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Overwatch - Profile</title>
 </head>
 
 <body>
+    <h1>Overwatch Profile</h1>
+
+    <!-- create element récuperer données -->
 
     <!--  -->
 
-    <label for="naissance">Date de naissance :</label>
-    <input id="naissance" type="date">
+    <!-- id pour recup form sur js ? -->
+    <form method="get" action="app.js" onsubmit="return false">
+        <!--  -->
+        <label for="naissance" value="">Date de naissance :</label>
+        <input id="naissance" type="date" required>
 
-    <label for="nom">Nom :</label>
-    <input id="nom" type="text">
+        <label for="nom" value="">Nom :</label>
+        <input id="nom" type="text" oninput="checkThis(this)" required>
 
-    <label for="prenom">Prénom :</label>
-    <input id="prenom" type="text">
+        <label for="prenom" value="">Prénom :</label>
+        <input id="prenom" type="text" oninput="checkThis(this)" required>
 
-    <label for="battletag">Battletag :</label>
-    <input id="battletag" type="text" value="">
+        <label for="battletag" value="">Battletag :</label>
+        <input id="battletag" type="text" value="" oninput="checkTag(this)" required>
 
-    <button onclick="OverwatchAPI()">Envoyer</button>
+        <p><button onclick="recup()">Envoyer</button></p>
 
-    <script src="assets/apps.js"></script>
+        <p>Resultats :</p>
+
+
+        <div id="flip" class="tadam"><a>Cliquer pour afficher le profil</a></div>
+
+        <div id="panel">
+            <h2>Profil Overwatch : </h2>
+            </br>
+            </br>
+
+            <div>
+                <p class="title">Nom : </p>
+                <p id="no"></p>
+                </br>
+            </div>
+
+
+            <div>
+                <p class="title">Prénom : </p>
+                <p id="pr"></p>
+                </br>
+            </div>
+
+            <div>
+                <p class="title">Date de naissance : </p>
+                <p id="nais"></p>
+                </br>
+            </div>
+
+            <div>
+                <p class="title">Battletag : </p>
+                <p id="bt"></p>
+                </br>
+            </div>
+
+            <div>
+                <p class="title">Games Played : </p>
+                <p id="gamesP"></p>
+                </br>
+            </div>
+
+            <div>
+                <p class="title">Games Win : </p>
+                <p id="gamesW"></p>
+                </br>
+            </div>
+
+            <div>
+                <p class="title">Games Lost : </p>
+                <p id="gamesL"></p>
+                </br>
+            </div>
+
+            <div>
+                <p class="title">Rating : </p>
+                <p id="rating"></p>
+                </br>
+            </div>
+
+
+        </div>
+
+
+        <script src="assets/apps.js"></script>
+
+
+
+    </form>
+
 </body>
 
 </html>

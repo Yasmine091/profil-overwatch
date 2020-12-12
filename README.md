@@ -1,3 +1,5 @@
+## Tests effectués avec le battletag "cats#11481" 
+
 ## Contexte du projet
 
 La doc de l'API qu'on va utiliser : https://ow-api.com/docs/#introduction
@@ -22,3 +24,4 @@ La doc de l'API qu'on va utiliser : https://ow-api.com/docs/#introduction
 * Attention, interdiction d'utiliser jQuery!
 
 Pour AJAX et les formulaires, MDN est (plus que jamais) votre ami.
+
