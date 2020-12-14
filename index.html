@@ -4,30 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
     <title>Overwatch - Profile</title>
 </head>
 
 <body>
-    
+
 
         <div id="formulaire">
+
         <form method="GET" onsubmit="return false">
 
+        <div>
+            <label id="error"></label>
+        </div>
+
+        <div>
         <label for="naissance">Date de naissance :</label>
         <input id="naissance" type="date" name="date" required>
+        </div>
 
+        <div>
         <label for="nom">Nom :</label>
-        <input id="nom" type="text" name="nom" oninput="checkThis(this)" required>
+        <input id="nom" type="text" name="nom" oninput="checkThis(this); checkForm()" required>
+        </div>
 
+        <div>
         <label for="prenom">Prénom :</label>
-        <input id="prenom" type="text" name="prenom" oninput="checkThis(this)" required>
-
-        <label for="battletag">Battletag :</label>
-        <input id="battletag" type="text" value="" name="battletag" oninput="checkTag(this)" required>
+        <input id="prenom" type="text" name="prenom" oninput="checkThis(this); checkForm()" required>
+        </div>
         
-        <button onclick="OverwatchAPI()">Envoyer</button>
+        <div>
+        <label for="battletag">Battletag :</label>
+        <input id="battletag" type="text" value="" name="battletag" oninput="checkTag(this); checkForm()" required>
+        </div>
+
+        <div>
+        <button onclick="OverwatchAPI()" id="send">Envoyer</button>
+        </div>
         
         </form>
+
         </div>
 
 
@@ -35,7 +52,7 @@
 
         <div id="profile">
             <ul id="stats">
-
+                
             </ul>
         <button onclick="goBack()">Rétour a l'accueil</button>
         </div>

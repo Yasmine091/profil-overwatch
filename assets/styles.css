@@ -1,0 +1,18 @@
+form div {
+    margin: 1rem;
+}
+
+form div label {
+    width: 8rem;
+    display: inline-block;
+}
+
+label#error {
+    width: 23.8rem !important;
+    color: red;
+}
+
+form div button {
+    width: 100%;
+    max-width: 23.8rem;
+}
